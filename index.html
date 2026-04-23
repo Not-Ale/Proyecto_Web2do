@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Realizar su compra</h1>
+
+    <div class="product-card">
+        <div class="image-card" id="imageCard"></div>
+
+        <h2>Mercedes Benz</h2>
+
+        <div class="colors">
+            <button type="button" class="color-btn black-btn">Negro</button>
+            <button type="button" class="color-btn white-btn">Blanco</button>
+        </div>
+
+        <button id="cartButton">Comprar</button>
+    </div>
+
+    <form action="procesar.php" method="post" class="form-card">
+
+        <input type="hidden" name="color" id="colorInput" value="negro">
+
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="number" name="edad" placeholder="Tu edad" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</div>
+
+<script src="Scripting.js"></script>
+</body>
+</html>
